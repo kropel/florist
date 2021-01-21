@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../assets/images/travel-1.jpg",
+    "alt": "See Sea",
+    "name": "See Sea",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-2.jpg",
+    "alt": "India",
+    "name": "India",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-3.jpg",
+    "alt": "Mountains road",
+    "name": "Mountains road",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-4.jpg",
+    "alt": "Coast by the sea",
+    "name": "Coast by the sea",
+    "button": "View Destination"
+  }
+]

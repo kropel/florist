@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
-import { Button } from "./Button"
+import { FiPhone } from "react-icons/fi"
 
 const Header = () => {
   return (
@@ -18,8 +18,8 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true" to="/trips">
-          Book a Flight
+        <Button href="tel:857324960">
+          <FiPhone style={{ fontSize: 20, marginRight: 10 }} /> 85 732 49 60
         </Button>
       </NavBtn>
     </Nav>
@@ -81,5 +81,22 @@ const NavBtn = styled.div`
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`
+
+const Button = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 10px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    border-color: #fff;
   }
 `

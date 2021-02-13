@@ -8,17 +8,19 @@ const Footer = props => {
       <FooterContainer>
         <FooterLinkWrapper>
           <FooterDesc>
-            <h1>Explorix</h1>
-            <p>We strive to create the best experiences for customers.</p>
+            <h1>Kwiaciarnia Ismena</h1>
+            <p style={{ marginBottom: "1rem" }}>Kwiaciarnia z tradycjami.</p>
+            <p>Jesteśmy z Wami już 38 lat.</p>
           </FooterDesc>
           <FooterLinkItems>
-            <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink to="/about">Contact</FooterLink>
-            <FooterLink to="/about">Destinations</FooterLink>
-            <FooterLink to="/about">Sponsorships</FooterLink>
+            <FooterLinkTitle>Mapa strony</FooterLinkTitle>
+            <FooterLink to="/">Kwiaciarnia Ismena</FooterLink>
+            <FooterLink to="/oferta">Oferta</FooterLink>
+            <FooterLink to="/onas">O nas</FooterLink>
+            <FooterLink to="/kontakt">Kontakt</FooterLink>
           </FooterLinkItems>
         </FooterLinkWrapper>
-        <FooterLinkWrapper>
+        {/* <FooterLinkWrapper>
           <FooterLinkItems>
             <FooterLinkTitle>Videos</FooterLinkTitle>
             <FooterLink to="/about">Contact</FooterLink>
@@ -31,7 +33,7 @@ const Footer = props => {
             <FooterLink to="/about">Destinations</FooterLink>
             <FooterLink to="/about">Sponsorships</FooterLink>
           </FooterLinkItems>
-        </FooterLinkWrapper>
+        </FooterLinkWrapper> */}
       </FooterContainer>
       <WebsiteRights>
         Kwiaciarnia Ismena © {new Date().getFullYear()}
@@ -49,7 +51,7 @@ const FooterContainer = styled.div`
   color: #000;
   background: #fafafb;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 `
 
 const FooterLinkWrapper = styled.div`
@@ -103,6 +105,8 @@ const FooterLink = styled(Link)`
 `
 
 const WebsiteRights = styled.p`
+  border-top: 1px solid #eee;
+  padding: 10px;
   text-align: center;
   font-size: 1rem;
   color: #444;

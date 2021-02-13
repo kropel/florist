@@ -45,7 +45,7 @@ const Trips = props => {
             <ProductTitle>{item.node.name}</ProductTitle>
           </TextWrap>
           <Button
-            to="/trips"
+            to="/oferta"
             primary="true"
             round="true"
             css={`
@@ -107,8 +107,7 @@ const ProductImg = styled(Img)`
   filter: brightness(70%);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  &:hover,
-  & ~ *:hover {
+  &:hover {
     filter: brightness(100%);
   }
 `

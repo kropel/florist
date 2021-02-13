@@ -22,9 +22,9 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>Lorem, ipsum dolor.</HeroH1>
-          <HeroP>Lorem ipsum dolor sit amet consectetur.</HeroP>
-          <Button big="true" primary="true" round="true" to="/trips">
+          <HeroH1>Ismena</HeroH1>
+          <HeroP>Pracownia florystyczna.</HeroP>
+          <Button big="true" primary="true" round="true" to="/oferta">
             Sprawdź Ofertę
           </Button>
         </HeroItems>
@@ -43,7 +43,6 @@ const HeroContainer = styled.div`
   height: 100vh;
   padding: 0 1rem;
   position: relative;
-  margin-top: -80px;
   color: #fff;
 
   /* :before {

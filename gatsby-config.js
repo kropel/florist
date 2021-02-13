@@ -1,11 +1,12 @@
 module.exports = {
   pathPrefix: `/kwiaciarnia`,
   siteMetadata: {
-    title: `Gatsby Travel Website`,
+    title: `Kwiaciarnia Ismena`,
     description: `Travel website showcasing the best travel destination and deals online.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
@@ -43,6 +44,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
